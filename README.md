@@ -27,3 +27,4 @@ tree++ /path/to/dir/
 
 ## ToDo
 - [ ] - Add colors! =)
+- Fix sub directory icone :(
