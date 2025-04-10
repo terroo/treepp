@@ -27,6 +27,16 @@ tree++ /path/to/dir/
 
 ---
 
+## Default `tree`
+If you want it to be your default tree, run:
+
+```bash
+sudo apt remove tree
+sudo ln -s /usr/local/bin/tree++ /usr/local/bin/tree
+```
+
+---
+
 ## ToDo
 - [ ] - Add colors! =)
 - Fix sub directory icone :(
