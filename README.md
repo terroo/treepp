@@ -28,7 +28,7 @@ tree++ /path/to/dir/
 ---
 
 ## Default `tree`
-If you want it to be your default tree, run:
+If you want it to be your default `tree` command, run:
 
 ```bash
 sudo apt remove tree
