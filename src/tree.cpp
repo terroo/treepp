@@ -25,9 +25,14 @@ void Tree::walk(std::string directory, std::string prefix) {
     fs::directory_entry entry = entries[index];
     std::vector<std::string> pointers = index == entries.size() - 1 ? final_pointers : inner_pointers;
 
-    const std::string filetype = fs::path(entry.path().filename().string()).extension().string(); // .md
+    const std::string filetype = fs::path(entry.path().filename().string()).extension().string();
 
-    std::cout << prefix << pointers[0] << unicode(filetype) << " " << entry.path().filename().string() << '\n';
+    if(fs::is_directory(entry.path())){
+      std::cout << prefix << pointers[0] << "\ufc6e" << " " << entry.path().filename().string() << '\n';
+    }else{
+      std::cout << prefix << pointers[0] << unicode(filetype) << " " << entry.path().filename().string() << '\n';
+    }
+
 
     if (!entry.is_directory()) {
       files++;

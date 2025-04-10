@@ -39,4 +39,3 @@ sudo ln -s /usr/local/bin/tree++ /usr/local/bin/tree
 
 ## ToDo
 - [ ] - Add colors! =)
-- Fix sub directory icone :(
