@@ -54,7 +54,7 @@ constexpr auto unicode = [](const std::string& str){
     {".d","\ue7af"},
     {".dart","\ue798"},
     {".exs","\ue62d"},
-    {".cls","\ue76a"},
+    {".clj","\ue76a"},
     {".gd","\ufba7"},
     {"makefile","\uf728"},
     {"Makefile","\uf728"},
