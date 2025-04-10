@@ -1,13 +1,14 @@
 #include "tree.hpp"
 
-Tree::Tree(){
+Tree::Tree() : 
+  inner_pointers({ "\u251c\u2500\u2500 ", "\u2502   " }), 
+  final_pointers({ "\u2514\u2500\u2500 ", "    " })
+{
   dirs = 0;
   files = 0;
-  inner_pointers = { "\u251c\u2500\u2500 ", "\u2502   " };
-  final_pointers = { "\u2514\u2500\u2500 ", "    " };
 }
 
-void Tree::walk(std::string directory, std::string prefix) {
+void Tree::walk(const std::string& directory, const std::string& prefix) {
   std::vector<fs::directory_entry> entries;
 
   for (const auto &entry : fs::directory_iterator(directory)) {
