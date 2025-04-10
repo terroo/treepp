@@ -1,7 +1,7 @@
 # `tree++`
 The `tree` command with icons made with Modern C++
 
-![tree++](./tree++.png) 
+![tree++](./tree-img.png) 
 
 ---
 
