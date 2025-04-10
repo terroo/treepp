@@ -5,7 +5,7 @@ The `tree` command with icons made with Modern C++
 
 ---
 
-## Build ans install
+## Build and install
 ```bash
 git clone https://github.com/terroo/treepp
 cmake -B build .
