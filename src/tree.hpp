@@ -72,6 +72,7 @@ constexpr auto unicode = [](const std::string& str){
     {".exe","\uf2d0"},
     {".r","\ufcd2"},
     {".json","\ue60b"},
+    {".mp3","\ufb75"},
 
     {"3d","\ue79b"},
     {"actionscript","\ufb25"},
@@ -82,7 +83,6 @@ constexpr auto unicode = [](const std::string& str){
     {"arduino","\ue255"},
     {"asciidoc","\uf718"},
     {"assembly","\uf471"},
-    {"audio","\ufb75"},
     {"authors","\uf0c0"},
     {"autohotkey","\uf812"},
     {"azure","\ufd03"},
