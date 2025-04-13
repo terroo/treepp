@@ -64,7 +64,6 @@ constexpr auto unicode = [](const std::string& str){
     {".xml","\uf72d"},
     {".svg","\ufc1f"},
     {".yaml","\ue60b"},
-    {".zig","Z"},
     {".vala","\uf7ab"},
     {".tex","\uf783"},
     {".vue","\ufd42"},
@@ -73,6 +72,7 @@ constexpr auto unicode = [](const std::string& str){
     {".r","\ufcd2"},
     {".json","\ue60b"},
     {".mp3","\ufb75"},
+    {".zig","Z"},
 
     {"3d","\ue79b"},
     {"actionscript","\ufb25"},
