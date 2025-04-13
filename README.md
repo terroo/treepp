@@ -5,6 +5,11 @@ The `tree` command with icons made with Modern C++
 
 ---
 
+## Fonts
+Install [Fonts Terminal Root](https://github.com/terroo/fonts)
+
+---
+
 ## Build and install
 ```bash
 git clone https://github.com/terroo/treepp
