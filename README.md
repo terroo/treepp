@@ -59,6 +59,4 @@ Run:
 ter debug.ter
 ./a.out
 ```
-> Or run directly: `clang++ -stdlib=libc++ -O0 -fno-omit-frame-pointer -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wcast-align -Wconversion -g -Wall -Werror -Wextra -Wshadow -Wpedantic -fsanitize=address ./src/main.cpp ./src/tree.cpp && ./a.out`
-
 
