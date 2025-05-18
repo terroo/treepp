@@ -2,6 +2,15 @@
 
 int main(int argc, char **argv) {
   Tree tree;
+
+  for(int i = 0; i < argc; ++i){
+    const std::string version = argv[i];
+    if(version == "-v" || version == "--version"){
+      std::cout << TREEPP_VERSION << '\n';
+      return 0;
+    }
+  }
+
   std::string directory = argc == 1 ? "." : argv[1];
 
   if(!fs::exists(directory) || !fs::is_directory(directory)){

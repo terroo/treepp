@@ -13,9 +13,14 @@ Install [Fonts Terminal Root](https://github.com/terroo/fonts)
 ## Quick install for Ubuntu
 ```bash
 sudo wget -q4 \
-  https://github.com/terroo/treepp/releases/download/v0.0.4/tree++ \
+  https://github.com/terroo/treepp/releases/download/v1.0.1/tree++ \
   -O /usr/local/bin/tree++ && \
   sudo chmod +x /usr/local/bin/tree++
+```
+
+Run:
+```bash
+tree++
 ```
 
 ---

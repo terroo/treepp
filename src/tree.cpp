@@ -1,6 +1,5 @@
 // treepp.cpp
 #include "tree.hpp"
-#include "resources.hpp" 
 
 Tree::Tree() :
   inner_pointers({ "\u251c\u2500\u2500 ", "\u2502   " }),
