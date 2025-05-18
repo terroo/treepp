@@ -14,7 +14,8 @@ Install [Fonts Terminal Root](https://github.com/terroo/fonts)
 ```bash
 sudo wget -q4 \
   https://github.com/terroo/treepp/releases/download/v0.0.4/tree++ \
-  -O /usr/local/bin/tree++
+  -O /usr/local/bin/tree++ && \
+  chmod +x /usr/local/bin/tree++
 ```
 
 ---
