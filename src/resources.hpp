@@ -5,7 +5,7 @@
 #include <string>
 #include <tuple>
 
-const std::string TREEPP_VERSION = "tree++ v1.0.0";
+const std::string TREEPP_VERSION = "tree++ v1.0.1";
 const std::string off = "\033[m";
 
 constexpr auto unicode = [](const std::string& str){

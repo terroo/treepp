@@ -20,8 +20,9 @@ sudo wget -q4 \
 
 Run:
 ```bash
-tree++
+tree++ --version # Or -v
 ```
+> `tree++ v1.0.1`
 
 ---
 
