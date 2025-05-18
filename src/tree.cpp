@@ -1,7 +1,9 @@
+// treepp.cpp
 #include "tree.hpp"
+#include "resources.hpp" 
 
-Tree::Tree() : 
-  inner_pointers({ "\u251c\u2500\u2500 ", "\u2502   " }), 
+Tree::Tree() :
+  inner_pointers({ "\u251c\u2500\u2500 ", "\u2502   " }),
   final_pointers({ "\u2514\u2500\u2500 ", "    " })
 {
   dirs = 0;
@@ -21,19 +23,26 @@ void Tree::walk(const std::string& directory, const std::string& prefix) {
     return left.path().filename() < right.path().filename();
   });
 
-
   for (size_t index = 0; index < entries.size(); index++) {
     fs::directory_entry entry = entries[index];
     std::vector<std::string> pointers = index == entries.size() - 1 ? final_pointers : inner_pointers;
 
-    const std::string filetype = fs::path(entry.path().filename().string()).extension().string();
+    std::string name = entry.path().filename().string();
+    std::string ext = entry.path().extension().string();
+    std::tuple<std::string, std::string> icon_color;
 
-    if(fs::is_directory(entry.path())){
-      std::cout << prefix << pointers[0] << "\ufc6e" << " " << entry.path().filename().string() << '\n';
-    }else{
-      std::cout << prefix << pointers[0] << unicode(filetype) << " " << entry.path().filename().string() << '\n';
+    if (entry.is_directory()) {
+      icon_color = filename("dir");
+    } else {
+      icon_color = unicode(ext);
     }
 
+    std::cout
+      << prefix << pointers[0]
+      << std::get<1>(icon_color) // Cor
+      << std::get<0>(icon_color) // Ícone
+      << off << " "              // Reset cor
+      << name << '\n';
 
     if (!entry.is_directory()) {
       files++;
@@ -47,5 +56,4 @@ void Tree::walk(const std::string& directory, const std::string& prefix) {
 void Tree::summary() {
   std::cout << "\n" << dirs << " directories," << " " << files << " files" << '\n';
 }
-
 

@@ -22,7 +22,7 @@ class Tree {
 };
 
 
-constexpr auto unicode = [](const std::string& str){
+/*constexpr auto unicode = [](const std::string& str){
   static const std::unordered_map<std::string, std::string> html = {
 
     {".asm","\uf471"},
@@ -255,4 +255,4 @@ constexpr auto unicode = [](const std::string& str){
 
   return std::string{"\uf723"};
 };
-
+*/
